@@ -1,6 +1,11 @@
 const axios = require('axios')
+import React from 'react';
 
-'use strict';
+class MainPage extends React.component{
+    
+}
+
+
 
 var div = document.getElementById("JS-Loader");
 
@@ -8,7 +13,9 @@ var ahmed = "Campaign";
 
 function getRequests  ()async {
   try {
-    return await axios.get('http://stacknet-api.herokuapp.com/api/requests')
+    var a = await axios.get('http://stacknet-api.herokuapp.com/api/requests');
+      return a;
+    console.log(a.)
   } catch (error) {
     console.error(error)
   }
