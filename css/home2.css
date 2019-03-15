@@ -1,4 +1,52 @@
 
+.no-padding {
+    padding: 0
+}
+
+.section-padding {
+    padding: 70px 0px;
+}
+
+.section-title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.section-title p {
+    font-size: 17px;
+    font-weight: 300;
+    text-transform: capitalize;
+    padding: 11px 34px;
+    color: #666;
+}
+
+
+.section-title h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 600;
+    position: relative;
+    margin-top: 0;
+}
+
+.section-title h2::before {
+    position: absolute;
+    left: 50%;
+    top: 55px;
+    height: 2px;
+    width: 74px;
+    background: #207FDC;
+    content: "";
+    margin-left: -37px;
+    z-index: 1;
+}
+.about-text p
+{
+    font-size: 17px;
+}
+
+
+
 #preloader {
   position: fixed;
   top: 0;
@@ -70,10 +118,11 @@
 }
 .myCarouselServices
 {
-    background-color:#000;
+    background-image: url('../images/kid.jpg');
     background-size: 100% 100%; 
     height: 530px;
     position: relative; 
+    
 }
 .myCarouselServicesUser
 {
@@ -517,3 +566,355 @@ td, th {
 }
     
 }
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04.ABOUT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.about-text {
+    margin-top: 100px;
+}
+
+.about-text h2 {
+    margin-bottom: 18px;
+    font-size: 26px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #207FDC;
+}
+
+.about-text h2 span {
+    color: #fff;
+}
+
+.about-text p {
+    margin-bottom: 10px;
+}
+
+.about-image img {
+    border-radius: 5px;
+}
+
+.margin-top-c {
+    margin-top: 50px;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 05.SERVICE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.service-area {
+    background: #F7F7F7;
+
+
+}
+
+.single-service {
+    padding: 0px 20px;
+    margin-top: 50px;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    color: #333;
+    text-align: center;
+    transition: .3s;
+}
+
+.single-service:hover.single-service h4 {
+    color: #207FDC;
+    transition: .3s;
+}
+
+.single-service:hover.single-service i {
+    color: #207FDC;
+    background: #fff;
+    border: 1px solid #207FDC;
+    transition: .3s;
+}
+
+.single-service h4 {
+    font-size: 18px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.single-service i {
+    color: #fff;
+    font-size: 40px;
+    background: #207FDC;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    line-height: 100px;
+    transition: .3s;
+    border: 1px solid #207FDC;
+}
+
+.single-service p {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+* ----------------------------------------------------------------------------------------
+* 06.WHY CHOOSE US CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.why-chhose-us-area {}
+
+.single-about {
+    margin-top: 30px;
+}
+
+.single-about h4 {
+    font-size: 18px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.single-about:hover.single-about h4 {
+    color: #207FDC;
+}
+
+.why-image {
+    margin-top: 30px;
+}
+.immg {
+    width: 350px;
+    height: 200px;
+}
+
+.about-icon {
+    float: left;
+    margin-bottom: 100px;
+    margin-right: 20px;
+    margin-top: 0px;
+}
+
+.about-icon i {
+    font-size: 30px;
+    color: #207FDC;
+}
+
+.single-about p {
+    margin-bottom: 0
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 14.CONTACT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.contact-area {
+    background: url(../images/bg/contact.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-area:after {
+    position: absolute;
+    background: rgba(0, 0, 0, .9);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+
+.contact-area .section-title h2 {
+    color: #fff;
+}
+
+.contact-area .section-title p {
+    color: #fff;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.form-control {
+    display: block;
+    border: 0px;
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #000;
+    background-color: transparent;
+    background-image: none;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 15px;
+    padding: 10px 7px 14px 15px;
+    border: 1px solid #f2f2f2;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-transition: .3s;
+    transition: .3s
+}
+
+.form-control:focus {
+    border-color: #207FDC;
+    outline: 0;
+    box-shadow: none;
+    color: #fff;
+    background: none;
+    -webkit-transition: .3s;
+    transition: .3s
+}
+
+.contact-form input[type='submit'] {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 25px;
+    text-transform: capitalize;
+    font-size: 14px;
+    border: 1px solid #207FDC;
+    background: #207FDC;
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.contact-form input[type='submit']:hover {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #207FDC;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}
+
+.success {
+    background: #50B948 none repeat scroll 0 0;
+    color: #fff;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ----------------------------------------------------------------------------------------
+* 16.CONTACT DETAILS CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.contact-details-area {
+    background: #207FDC;
+}
+
+.single-contact-details {
+    color: #fff;
+}
+
+.single-contact-details h2 {
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: .3s;
+    margin-top: 0;
+}
+
+.single-contact-details h3 {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.single-contact-details h3 i {
+    margin-right: 10px;
+}
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1280px) {}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    .navbar li a {
+        padding: 30px 11px;
+        font-size: 12px;
+    }
+    .myBrandPage {
+        text-align: center;
+    }
+    .about-text {
+        margin-top: 50px;
+    }
+    .section-title p {
+        padding: 0px 50px;
+    }
+    .single-contact-details {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    .navbar-toggle .icon-bar {
+        background: #f8f8f8;
+    }
+
+    .navbar {
+        min-height: 0px;
+    }
+     .navbar li a {
+        padding: 11px 15px;
+    }
+    .navbar-fixed-bottom .navbar-collapse,
+    .navbar-fixed-top .navbar-collapse {
+        max-height: 420px;
+    }
+    .navbar-collapse {
+        background: #333;
+    }
+    .navbar li a {
+        color: #fff;
+    }
+     .navbar li a:hover {
+        color: #000;
+    }
+    .section-title h2 {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    .header-text {
+        margin-top: 10px;
+    }
+    .section-padding {
+        padding: 40px 0px;
+    }
+    .about-text {
+        margin-top: 30px;
+    }
+    .section-title h2::before {
+        top: 40px;
+    }
+
+}
+
+
+
+
